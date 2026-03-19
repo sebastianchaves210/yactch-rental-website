@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Preview — Miami Yacht Collective</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500&family=Didact+Gothic&family=Josefin+Sans:wght@200;300;400&family=Italiana&family=Forum&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #060606;
+    color: #fff;
+    min-height: 100vh;
+    padding: 60px 40px;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  .page-title {
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 80px;
+  }
+
+  .options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .option-label {
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #555;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  .preview-row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .preview-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 70px;
+    border-radius: 12px;
+    min-height: 200px;
+    flex: 1;
+    max-width: 520px;
+  }
+
+  .preview-box.dark {
+    background: #0c1a2e;
+    border: 1px solid #1a2d4a;
+  }
+
+  .preview-box.light {
+    background: #f5f3ef;
+    border: 1px solid #e0dbd3;
+  }
+
+  .preview-box.white {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+  }
+
+  .preview-box.black {
+    background: #000;
+    border: 1px solid #1a1a1a;
+  }
+
+  /* ── LOGO LOCKUPS ── */
+
+  .logo-lockup {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+  }
+
+  .logo-lockup img {
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  /* ── OPTION A: Icon left, stacked text right ── */
+  .lockup-a img { width: 52px; height: 52px; }
+  .lockup-a .logo-text {
+    gap: 2px;
+  }
+  .lockup-a .text-miami {
+    font-family: 'Italiana', serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .lockup-a .text-collective {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+
+  /* Dark variant */
+  .lockup-a.on-dark .text-miami { color: rgba(255,255,255,0.5); }
+  .lockup-a.on-dark .text-collective { color: #fff; }
+
+  /* Light variant */
+  .lockup-a.on-light .text-miami { color: rgba(12,26,46,0.45); }
+  .lockup-a.on-light .text-collective { color: #0c1a2e; }
+
+
+  /* ── OPTION B: Icon left, single line — all caps minimal ── */
+  .lockup-b {
+    gap: 16px;
+  }
+  .lockup-b img { width: 44px; height: 44px; }
+  .lockup-b .divider {
+    width: 1px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .lockup-b.on-dark .divider { background: rgba(255,255,255,0.15); }
+  .lockup-b.on-light .divider { background: rgba(12,26,46,0.15); }
+
+  .lockup-b .logo-text {
+    gap: 1px;
+  }
+  .lockup-b .text-miami {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .lockup-b .text-collective {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  .lockup-b.on-dark .text-miami { color: rgba(255,255,255,0.4); }
+  .lockup-b.on-dark .text-collective { color: #fff; }
+  .lockup-b.on-light .text-miami { color: rgba(12,26,46,0.4); }
+  .lockup-b.on-light .text-collective { color: #0c1a2e; }
+
+
+  /* ── OPTION C: Icon left, elegant serif with thin rule ── */
+  .lockup-c {
+    gap: 20px;
+  }
+  .lockup-c img { width: 56px; height: 56px; }
+  .lockup-c .logo-text {
+    gap: 6px;
+  }
+  .lockup-c .text-collective {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  .lockup-c .text-rule {
+    height: 1px;
+    width: 100%;
+  }
+  .lockup-c.on-dark .text-rule { background: rgba(255,255,255,0.12); }
+  .lockup-c.on-light .text-rule { background: rgba(12,26,46,0.12); }
+
+  .lockup-c .text-miami {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 10px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  .lockup-c.on-dark .text-miami { color: rgba(255,255,255,0.4); }
+  .lockup-c.on-dark .text-collective { color: #fff; }
+  .lockup-c.on-light .text-miami { color: rgba(12,26,46,0.4); }
+  .lockup-c.on-light .text-collective { color: #0c1a2e; }
+
+
+  /* ── OPTION D: Large icon + text underneath ── */
+  .lockup-d {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+  .lockup-d img { width: 64px; height: 64px; }
+  .lockup-d .logo-text {
+    align-items: center;
+    gap: 4px;
+  }
+  .lockup-d .text-collective {
+    font-family: 'Forum', serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+  .lockup-d .text-miami {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 9px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+  }
+  .lockup-d.on-dark .text-miami { color: rgba(255,255,255,0.35); }
+  .lockup-d.on-dark .text-collective { color: #fff; }
+  .lockup-d.on-light .text-miami { color: rgba(12,26,46,0.35); }
+  .lockup-d.on-light .text-collective { color: #0c1a2e; }
+
+  /* ── OPTION E: Compact inline — icon + COLLECTIVE only ── */
+  .lockup-e {
+    gap: 14px;
+  }
+  .lockup-e img { width: 40px; height: 40px; }
+  .lockup-e .text-collective {
+    font-family: 'Italiana', serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+  .lockup-e.on-dark .text-collective { color: #fff; }
+  .lockup-e.on-light .text-collective { color: #0c1a2e; }
+
+  /* ── Invert filter for light backgrounds ── */
+  .invert-logo {
+    filter: brightness(0) saturate(100%);
+  }
+</style>
+</head>
+<body>
+
+<p class="page-title">Miami Yacht Collective &mdash; Logo Lockup Options</p>
+
+<div class="options-grid">
+
+  <!-- OPTION A -->
+  <div class="option">
+    <span class="option-label">Option A &mdash; Stacked Serif</span>
+    <div class="preview-row">
+      <div class="preview-box dark">
+        <div class="logo-lockup lockup-a on-dark">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo">
+          <div class="logo-text">
+            <span class="text-miami">Miami Yacht</span>
+            <span class="text-collective">Collective</span>
+          </div>
+        </div>
+      </div>
+      <div class="preview-box light">
+        <div class="logo-lockup lockup-a on-light">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo" class="invert-logo">
+          <div class="logo-text">
+            <span class="text-miami">Miami Yacht</span>
+            <span class="text-collective">Collective</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION B -->
+  <div class="option">
+    <span class="option-label">Option B &mdash; Divider Line</span>
+    <div class="preview-row">
+      <div class="preview-box dark">
+        <div class="logo-lockup lockup-b on-dark">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo">
+          <div class="divider"></div>
+          <div class="logo-text">
+            <span class="text-miami">Miami Yacht</span>
+            <span class="text-collective">Collective</span>
+          </div>
+        </div>
+      </div>
+      <div class="preview-box light">
+        <div class="logo-lockup lockup-b on-light">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo" class="invert-logo">
+          <div class="divider"></div>
+          <div class="logo-text">
+            <span class="text-miami">Miami Yacht</span>
+            <span class="text-collective">Collective</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION C -->
+  <div class="option">
+    <span class="option-label">Option C &mdash; Ruled Serif</span>
+    <div class="preview-row">
+      <div class="preview-box dark">
+        <div class="logo-lockup lockup-c on-dark">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo">
+          <div class="logo-text">
+            <span class="text-collective">Collective</span>
+            <div class="text-rule"></div>
+            <span class="text-miami">Miami Yacht</span>
+          </div>
+        </div>
+      </div>
+      <div class="preview-box light">
+        <div class="logo-lockup lockup-c on-light">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo" class="invert-logo">
+          <div class="logo-text">
+            <span class="text-collective">Collective</span>
+            <div class="text-rule"></div>
+            <span class="text-miami">Miami Yacht</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION D -->
+  <div class="option">
+    <span class="option-label">Option D &mdash; Centered Stack</span>
+    <div class="preview-row">
+      <div class="preview-box dark">
+        <div class="logo-lockup lockup-d on-dark">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo">
+          <div class="logo-text">
+            <span class="text-collective">Collective</span>
+            <span class="text-miami">Miami Yacht</span>
+          </div>
+        </div>
+      </div>
+      <div class="preview-box light">
+        <div class="logo-lockup lockup-d on-light">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo" class="invert-logo">
+          <div class="logo-text">
+            <span class="text-collective">Collective</span>
+            <span class="text-miami">Miami Yacht</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION E -->
+  <div class="option">
+    <span class="option-label">Option E &mdash; Icon + Word Only</span>
+    <div class="preview-row">
+      <div class="preview-box dark">
+        <div class="logo-lockup lockup-e on-dark">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo">
+          <span class="text-collective">Collective</span>
+        </div>
+      </div>
+      <div class="preview-box light">
+        <div class="logo-lockup lockup-e on-light">
+          <img src="images/myc-logo-yacht.jpg" alt="MYC Logo" class="invert-logo">
+          <span class="text-collective">Collective</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

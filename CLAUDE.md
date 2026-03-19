@@ -22,78 +22,79 @@ python3 -m http.server 8000
   - WhatsApp: links to wa.me/17876645040
 - **Conversion goal**: Drive phone/WhatsApp contact — that IS the booking flow.
 - **No backend**: No forms, no database, no payment processing. Intentionally lead-gen only.
+- **Domain**: `https://miamiyachtcollective.com`
+- **Social**: Instagram at `https://www.instagram.com/miamiyachtcollective/`
 
-## Architecture
+---
 
-Every HTML page is **self-contained** — CSS and JS are inlined. There are no shared stylesheets or script files. Booking modal markup is intentionally duplicated across all pages.
+## Current Phase: Polish & Perfect
 
-### Page Types
+The site redesign (migrated from a Webflow "YachtLux" template) is complete. We are now editing and perfecting the website — fixing visuals, tweaking layouts, improving content, and ensuring everything looks great before launch.
 
-| Type | Pages | Layout |
-|------|-------|--------|
-| **Landing** | `index.html` | Hero, fleet grid, CTA, FAQ, footer, modal |
-| **Yacht Detail** | `isabella.html`, `maxum.html`, `ferretti.html`, `azimut.html`, `acgua-alberti.html` | Static hardcoded content per yacht (carousel, specs, description, modal) |
-| **Legacy Detail** | `yacht-details.html` | JS-driven detail page via `?yacht=` param (kept for backwards compat) |
-| **Service Landing** | `yacht-parties-miami.html`, `boat-tours-miami.html`, `yacht-catering-miami.html`, `bachelorette-yacht-miami.html`, `corporate-yacht-miami.html` | Keyword-targeted service pages (content card, CTAs, modal) |
-| **Gallery** | `gallery.html` | Navy background, masonry photo grid, fullscreen lightbox, modal |
-| **Blog Landing** | `blog.html` | Navy background, article card grid |
-| **Blog Articles** | `blog/*.html` | White content card on #f5f5f5, article body with H2 sections, modal |
+### Site Structure
 
-### Key Pattern: Individual yacht pages have hardcoded HTML content (not JS-loaded) so Google can crawl all text. This was an intentional SEO decision — do not convert back to JS-driven content.
+| Page | File | Purpose |
+|------|------|---------|
+| Homepage | `index.html` | Hero, fleet grid (9 yachts), FAQ, CTA sections |
+| Isabella 48' | `isabella.html` | Yacht detail page |
+| Maxum 46' | `maxum.html` | Yacht detail page |
+| Ferretti 75' | `ferretti.html` | Yacht detail page |
+| 55' Azimut | `azimut.html` | Yacht detail page |
+| 90' Acgua Alberti | `acgua-alberti.html` | Yacht detail page |
+| 25' Yamaha 255XD | `yamaha-255xd.html` | Yacht detail page (heavy gallery) |
+| 65' Azimut L'chaim | `azimut-lchaim.html` | Yacht detail page (heavy gallery) |
+| 90' Deep Blue | `deep-blue.html` | Yacht detail page (heavy gallery) |
+| 62' Anvera | `anvera.html` | Yacht detail page (heavy gallery) |
+| Gallery | `gallery.html` | Photo grid with lightbox |
+| Blog | `blog.html` | Blog listing page |
+| Blog articles | `blog/*.html` | 5 blog posts (use `../` prefix for assets) |
+| About | `about.html` | About page |
+| Services | `services.html` | Services overview |
+| Contact | `contact.html` | Contact page |
+| Booking | `booking.html` | Booking page |
 
-## Fleet Data
+### SEO Rules
 
-| Yacht | File | Image | Price | Guests |
-|-------|------|-------|-------|--------|
-| Isabella 48' W/ Jetski | `isabella.html` | `Boat Photos/Isabella.avif` | $1,100 | 13 |
-| Maxum 46' | `maxum.html` | `Boat Photos/maxum.avif` | $899 | 10 |
-| Ferretti 75' | `ferretti.html` | `Boat Photos/ferreti.avif` | $1,890 | 20 |
-| 55' Azimut | `azimut.html` | `Boat Photos/azimut.avif` | $1,400 | 15 |
-| 90' Acgua Alberti | `acgua-alberti.html` | `Boat Photos/acgua-alberti.avif` | $2,500 | 30 |
-| 25' Yamaha 255XD | `yamaha-255xd.html` | `25' Yamaha 255XD Easy/Easyfowey-1.jpg` | $TBD | 10 |
+Do not change these without explicit instruction:
+- `<title>` tags
+- `<meta name="description">` content
+- `<h1>`, `<h2>`, `<h3>` text
+- Image `src` and `alt` attributes
+- Internal link `href` values
+- Canonical URLs
 
-Note: `ferreti.avif` is intentionally spelled without the double 't' — that's the actual filename.
+### Booking Modal — Required on Every Page
 
-## Design System
+Every page MUST include the booking modal. This is the business's conversion mechanism.
 
-```css
---cyan: #00BFFF        /* primary accent */
---cyan-hover: #00a8e0
---navy: #0D1B4B        /* dark backgrounds */
---heading-font: 'Barlow Condensed', sans-serif
---yacht-name-font: 'Bebas Neue', sans-serif
---body-font: system stack
---card-radius: 20px
-```
+- Any "Book Now" / "Charter Now" / CTA button must have the `data-modal` attribute
+- Modal offers two options: Call (787) 664-5040 or WhatsApp (wa.me/17876645040)
+- The modal markup and JS must be present on every single page
 
-Breakpoints: `768px` (tablet), `480px` (mobile)
+---
 
-## Navbar Structure
+## Fleet Data (Reference)
 
-All pages share the same navbar pattern (duplicated per file):
-- Logo: `MiamiYachtCollective Logo.png` → links to `index.html`
-- Blog button (outlined white pill, `btn-gallery-nav`)
-- Gallery button (outlined white pill, `btn-gallery-nav`)
-- Book button (cyan, triggers modal via `data-modal`)
-- Blog article pages in `blog/` use `../` prefix for all asset and link paths
-
-## Conventions
-
-- Booking modal triggered by `data-modal` attribute on any element
-- Modal offers: Call (787) 664-5040 | WhatsApp deep link
-- Images use `.avif` format (performance-optimized)
-- CSS/JS inlined per file — do not externalize
-- Navbar adds `.scrolled` class on scroll (>60px) for shadow effect
-- `sitemap.xml` must be updated when adding/removing pages
-- Deployment: `git push origin main` (auto-deploys)
-- Domain: `https://miamiyachtcollective.com`
-- Social: Instagram at `https://www.instagram.com/miamiyachtcollective/`
+| Yacht | File | Price | Guests |
+|-------|------|-------|--------|
+| Isabella 48' W/ Jetski | `isabella.html` | $1,100 | 13 |
+| Maxum 46' | `maxum.html` | $899 | 10 |
+| Ferretti 75' | `ferretti.html` | $1,890 | 20 |
+| 55' Azimut | `azimut.html` | $1,400 | 15 |
+| 90' Acgua Alberti | `acgua-alberti.html` | $2,500 | 30 |
+| 25' Yamaha 255XD | `yamaha-255xd.html` | $TBD | 10 |
+| 65' Azimut L'chaim | `azimut-lchaim.html` | TBD | 20 |
+| 90' Deep Blue W/ Jacuzzi | `deep-blue.html` | $2,500 | 30 |
+| 62' Anvera | `anvera.html` | $1,200 | 15 |
 
 ## Do NOT
 
 - Add npm, webpack, or any build step
-- Create shared CSS/JS files — each page is self-contained
-- Break the booking modal flow
-- Replace `.avif` images with heavier formats
-- Convert static yacht pages back to JS-driven content loading
+- Rename any HTML files
+- Change any `<title>`, `<meta description>`, heading text, image alt, or link href
+- Break the booking modal flow (Call + WhatsApp)
+- Replace `.avif` or existing image references with different paths
+- Modify `sitemap.xml`
 - Add payment forms, login, or backend functionality
+- Use Webflow's CMS URL structure (like `/yachts/slug`) — keep flat file structure
+

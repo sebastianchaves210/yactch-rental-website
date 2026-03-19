@@ -1,592 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>90' Acgua Alberti Superyacht Charter Miami | Miami Yacht Collective</title>
+  <meta charset="utf-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRVB7SJPJY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRVB7SJPJY');
+  </script>
+  <title>90&#x27; Acgua Alberti Superyacht Charter Miami | Miami Yacht Collective</title>
   <meta name="description" content="Charter the 90-foot Acgua Alberti superyacht in Miami. The ultimate luxury experience for up to 30 guests. Starting at $2,500. Perfect for large parties, corporate events, and celebrations.">
-  <meta name="keywords" content="90 foot yacht charter Miami, Acgua Alberti superyacht Miami, large yacht rental Miami 30 guests, superyacht charter Miami, luxury yacht party Miami">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="90' Acgua Alberti Superyacht Charter Miami | Miami Yacht Collective">
-  <meta property="og:description" content="Charter the 90-foot Acgua Alberti superyacht in Miami. The ultimate luxury experience for up to 30 guests. Starting at $2,500.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://miamiyachtcollective.com/MiamiYachtCollective%20Logo.png">
   <link rel="canonical" href="https://miamiyachtcollective.com/acgua-alberti.html">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta content="90&#x27; Acgua Alberti Superyacht Charter Miami | Miami Yacht Collective" property="og:title">
+  <meta content="Charter the 90-foot Acgua Alberti superyacht in Miami. The ultimate luxury experience for up to 30 guests. Starting at $2,500. Perfect for large parties, corporate events, and celebrations." property="og:description">
+  <meta content="90&#x27; Acgua Alberti Superyacht Charter Miami | Miami Yacht Collective" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/miami-yacht-collective.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Aclonica:300,400,500,600,700","Inter Tight:300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="images/webclip.png" rel="apple-touch-icon">
 
-    :root {
-      --cyan: #00BFFF;
-      --cyan-hover: #00a8e0;
-      --navy: #0D1B4B;
-      --heading-font: 'Barlow Condensed', sans-serif;
-      --yacht-name-font: 'Bebas Neue', sans-serif;
-      --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--body-font);
-      background: #f5f5f5;
-      color: #1a1a2e;
-      -webkit-font-smoothing: antialiased;
-      min-height: 100vh;
-    }
-
-    /* ───────────── TOP NAVBAR ───────────── */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background: var(--navy);
-      border-bottom: 1px solid rgba(0, 191, 255, 0.3);
-      transition: box-shadow 0.35s ease;
-    }
-
-    .navbar.scrolled {
-      box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
-    }
-
-    .navbar-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: -20px 0;
-      text-decoration: none;
-    }
-
-    .navbar-logo img {
-      height: 96px;
-      width: auto;
-    }
-
-    .navbar-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .btn-gallery-nav {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      color: #fff;
-      font-weight: 700;
-      font-size: 16px;
-      font-family: var(--heading-font);
-      letter-spacing: 0.5px;
-      border: 2px solid #fff;
-      border-radius: 999px;
-      padding: 14px 36px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-    }
-
-    .btn-gallery-nav:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 18px rgba(255, 255, 255, 0.15);
-    }
-
-    .btn-book-nav {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--cyan);
-      color: #fff;
-      font-weight: 700;
-      font-size: 16px;
-      font-family: var(--heading-font);
-      letter-spacing: 0.5px;
-      border: none;
-      border-radius: 999px;
-      padding: 14px 36px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-    }
-
-    .btn-book-nav:hover {
-      background: var(--cyan-hover);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 18px rgba(0, 191, 255, 0.35);
-    }
-
-    /* ───────────── BACK NAV ───────────── */
-    .back-nav {
-      padding: 28px 40px 16px;
-      padding-top: 100px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--heading-font);
-      font-weight: 700;
-      font-size: 16px;
-      color: var(--navy);
-      text-decoration: none;
-      transition: opacity 0.2s ease;
-    }
-
-    .back-link:hover {
-      opacity: 0.65;
-    }
-
-    .back-link svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    /* ───────────── CAROUSEL ───────────── */
-    .carousel-wrapper {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 40px 0;
-    }
-
-    .carousel {
-      position: relative;
-      width: 100%;
-      height: 600px;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #ddd;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    }
-
-    .carousel-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 0.6s ease;
-    }
-
-    .carousel-slide.active {
-      opacity: 1;
-    }
-
-    .carousel-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .carousel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.92);
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-      transition: background 0.2s ease, transform 0.2s ease;
-      z-index: 5;
-      font-size: 22px;
-      color: var(--navy);
-    }
-
-    .carousel-btn:hover {
-      background: #fff;
-      transform: translateY(-50%) scale(1.08);
-    }
-
-    .carousel-btn.prev { left: 16px; }
-    .carousel-btn.next { right: 16px; }
-
-    /* ───────────── DETAIL CONTENT ───────────── */
-    .detail-content {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
-
-    .detail-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 44px 48px;
-      margin-top: 28px;
-      margin-bottom: 48px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    }
-
-    .detail-name {
-      font-family: var(--yacht-name-font);
-      font-weight: 400;
-      font-size: clamp(40px, 5vw, 56px);
-      color: var(--navy);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      line-height: 1.05;
-      margin-bottom: 8px;
-    }
-
-    .detail-price {
-      font-family: var(--heading-font);
-      font-weight: 600;
-      font-size: 20px;
-      color: #888;
-      margin-bottom: 24px;
-    }
-
-    .detail-description {
-      font-size: 16px;
-      color: #444;
-      line-height: 1.7;
-      max-width: 680px;
-      margin-bottom: 32px;
-    }
-
-    .btn-book-detail {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--cyan);
-      color: #fff;
-      font-weight: 700;
-      font-size: 18px;
-      font-family: var(--heading-font);
-      letter-spacing: 0.5px;
-      border: none;
-      border-radius: 999px;
-      padding: 14px 36px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-    }
-
-    .btn-book-detail:hover {
-      background: var(--cyan-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(0, 191, 255, 0.4);
-    }
-
-    /* ───────────── SPECS ROW ───────────── */
-    .specs-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-      margin-bottom: 28px;
-      background: #F3F4F6;
-      border-radius: 12px;
-      padding: 16px 24px;
-    }
-
-    .spec-item {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      padding: 8px 0;
-    }
-
-    .spec-item:not(:last-child) {
-      border-right: 1px solid #e0e0e0;
-      padding-right: 24px;
-      margin-right: 24px;
-    }
-
-    .spec-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: #888;
-      font-weight: 600;
-    }
-
-    .spec-value {
-      font-family: var(--yacht-name-font);
-      font-weight: 400;
-      font-size: 24px;
-      letter-spacing: 0.5px;
-      color: var(--navy);
-    }
-
-    /* ───────────── BOOKING MODAL ───────────── */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 999;
-      background: rgba(0, 0, 0, 0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.2s ease, visibility 0.2s ease;
-    }
-
-    .modal-backdrop.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .modal {
-      background: #fff;
-      border-radius: 20px;
-      max-width: 480px;
-      width: 90%;
-      padding: 48px 40px;
-      position: relative;
-      transform: scale(0.95);
-      transition: transform 0.2s ease;
-    }
-
-    .modal-backdrop.active .modal {
-      transform: scale(1);
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 18px;
-      right: 20px;
-      background: none;
-      border: none;
-      font-size: 24px;
-      color: #555;
-      cursor: pointer;
-      line-height: 1;
-      padding: 4px;
-      transition: color 0.2s ease;
-    }
-
-    .modal-close:hover {
-      color: #000;
-    }
-
-    .modal-heading {
-      font-family: var(--heading-font);
-      font-weight: 800;
-      font-size: 30px;
-      color: #111;
-      text-align: center;
-      margin-bottom: 8px;
-    }
-
-    .modal-subtext {
-      font-size: 16px;
-      color: #666;
-      text-align: center;
-      margin-bottom: 36px;
-    }
-
-    .modal-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .modal-btn {
-      display: block;
-      width: 100%;
-      padding: 20px;
-      border: none;
-      border-radius: 999px;
-      font-family: var(--heading-font);
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.3px;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .modal-btn:hover {
-      transform: translateY(-1px);
-    }
-
-    .modal-btn-call {
-      background: var(--navy);
-      color: #fff;
-    }
-
-    .modal-btn-call:hover {
-      box-shadow: 0 6px 20px rgba(13, 27, 75, 0.35);
-    }
-
-    .modal-btn-wa {
-      background: #25D366;
-      color: #fff;
-    }
-
-    .modal-btn-wa:hover {
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
-    }
-
-    /* ───────────── RESPONSIVE ───────────── */
-    @media (max-width: 768px) {
-      .navbar { padding: 16px 20px; }
-      .back-nav { padding: 20px 20px 12px; }
-      .carousel-wrapper { padding: 0 20px; }
-      .carousel { height: 360px; }
-      .detail-content { padding: 0 20px; }
-      .detail-card { padding: 28px 24px; }
-      .carousel-btn { width: 40px; height: 40px; font-size: 18px; }
-    }
-
-    @media (max-width: 480px) {
-      .carousel { height: 260px; }
-      .detail-card { padding: 24px 20px; }
-      .specs-row { padding: 12px 16px; }
-      .spec-item:not(:last-child) { padding-right: 12px; margin-right: 12px; }
-      .btn-gallery-nav { padding: 10px 20px; font-size: 14px; }
-      .btn-book-nav { padding: 10px 20px; font-size: 14px; }
-    }
-  </style>
+<style>
+  .yacht-gallery-block {
+    height: auto !important;
+  }
+  .yacht-gallery-image-block {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    max-width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    position: static !important;
+  }
+  .yacht-gallery-image-01,
+  .yacht-gallery-image-02,
+  .yacht-gallery-image-03,
+  .yacht-gallery-image-04,
+  .yacht-gallery-image-05,
+  .yacht-gallery-image-06,
+  .yacht-gallery-image-07 {
+    opacity: 1 !important;
+    transform: none !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .yacht-gallery-title {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+</style>
+<style>
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+  .modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-booking {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 480px;
+    width: 90%;
+    padding: 48px 40px;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+  .modal-backdrop.active .modal-booking {
+    transform: scale(1);
+  }
+  .modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+    transition: color 0.2s ease;
+  }
+  .modal-close:hover { color: #000; }
+  .modal-heading {
+    font-weight: 800;
+    font-size: 30px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .modal-subtext {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .modal-btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .modal-btn:hover { transform: translateY(-1px); }
+  .modal-btn-call { background: #0d1b4b; color: #fff; }
+  .modal-btn-call:hover { box-shadow: 0 6px 20px rgba(13, 27, 75, 0.35); }
+  .modal-btn-wa { background: #25D366; color: #fff; }
+  .modal-btn-wa:hover { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35); }
+</style>
 </head>
 <body>
-
-  <!-- ═══════════ NAVBAR ═══════════ -->
-  <nav class="navbar" id="navbar">
-    <a href="index.html" class="navbar-logo">
-      <img src="MiamiYachtCollective Logo.png" alt="Miami Yacht Collective — Luxury Yacht Rental & Catering in Miami">
-    </a>
-    <div class="navbar-actions">
-      <a href="blog.html" class="btn-gallery-nav">Blog</a>
-      <a href="gallery.html" class="btn-gallery-nav">Gallery</a>
-      <a href="#" class="btn-book-nav" data-modal>Book</a>
-    </div>
-  </nav>
-
-  <!-- BACK NAV -->
-  <nav class="back-nav">
-    <a href="index.html" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/>
-      </svg>
-      Back
-    </a>
-  </nav>
-
-  <!-- CAROUSEL -->
-  <div class="carousel-wrapper">
-    <div class="carousel" id="carousel">
-      <div class="carousel-slide active">
-        <img src="Boat Photos/acgua-alberti.avif" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events">
-      </div>
-      <button class="carousel-btn prev" id="prevBtn">&#8249;</button>
-      <button class="carousel-btn next" id="nextBtn">&#8250;</button>
-    </div>
-  </div>
-
-  <!-- DETAIL CONTENT -->
-  <div class="detail-content">
-    <div class="detail-card">
-      <h1 class="detail-name">90' Acgua Alberti</h1>
-      <div class="detail-price">Starting at $2,500</div>
-
-      <div class="specs-row">
-        <div class="spec-item">
-          <span class="spec-label">Length</span>
-          <span class="spec-value">90 ft</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Guests</span>
-          <span class="spec-value">Up to 30</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Crew</span>
-          <span class="spec-value">Captain + 2</span>
-        </div>
-      </div>
-
-      <div class="detail-description">
-        <p>The crown jewel of our Miami yacht fleet, the 90-foot Acgua Alberti is the largest superyacht available for charter with Miami Yacht Collective. This magnificent vessel commands attention wherever she goes, from Biscayne Bay to the open waters off Miami Beach. With lavish amenities, expansive deck space, and room for up to 30 guests, the Acgua Alberti delivers an unparalleled luxury yacht experience in Miami.</p>
-        <br>
-        <p>Step aboard and discover vast entertaining areas designed for large Miami yacht parties, corporate events, music video shoots, weddings, and milestone celebrations like New Year's Eve on the water. The sprawling flybridge and multiple lounge zones offer stunning panoramic views of the Miami skyline, Star Island, and Fisher Island as you cruise through the turquoise waters of Biscayne Bay. Every detail has been crafted for comfort and elegance, from the plush interior salons to the sun-drenched aft deck.</p>
-        <br>
-        <p>Departing from Miami Beach Marina, the Acgua Alberti comes with a professional crew of three — a captain and two crew members — ensuring a seamless, first-class experience from the moment you board. Whether you are hosting an exclusive corporate retreat, an unforgettable birthday celebration, or a glamorous sunset cruise for your closest friends, this 90-foot superyacht charter in Miami sets the stage for memories that last a lifetime. Starting at $2,500, this is the ultimate Miami yacht rental for those who demand the very best.</p>
-      </div>
-
-      <button class="btn-book-detail" data-modal>Book Now!</button>
-    </div>
-  </div>
-
-  <!-- ═══════════ BOOKING MODAL ═══════════ -->
-  <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal">
-      <button class="modal-close" id="modalClose">&times;</button>
-      <div class="modal-heading">How Would You Like to Book?</div>
-      <p class="modal-subtext">We'll confirm your booking right away!</p>
-      <div class="modal-buttons">
-        <a href="tel:7876645040" class="modal-btn modal-btn-call">Call us at (787) 664-5040</a>
-        <a href="https://wa.me/17876645040" target="_blank" rel="noopener" class="modal-btn modal-btn-wa">WhatsApp Direct</a>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    let navTicking = false;
-    window.addEventListener('scroll', () => {
-      if (!navTicking) {
-        window.requestAnimationFrame(() => {
-          navbar.classList.toggle('scrolled', window.scrollY > 60);
-          navTicking = false;
-        });
-        navTicking = true;
-      }
+  <div class="page-wrapper">
+    <div class="global-scripts w-embed w-script">
+      <style>
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+</style>
+      <script src="https://unpkg.com/@studio-freight/lenis"></script>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
     });
-
-    // Booking modal
-    const backdrop = document.getElementById('modalBackdrop');
-    const modalCloseBtn = document.getElementById('modalClose');
-
-    function openModal(e) {
-      e.preventDefault();
-      backdrop.classList.add('active');
-      document.body.style.overflow = 'hidden';
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
+    requestAnimationFrame(raf);
+  });
+</script>
+    </div>
+    <section class="cursor-secition">
+      <div class="cursor-block">
+        <div class="cursor-dot"></div>
+        <div class="cursor-border"></div>
+      </div>
+    </section>
+    <div data-animation="default" class="header-section w-variant-432693fa-2b5d-abb9-2bb2-b5d3e47675c0 w-nav" data-easing2="ease" data-easing="ease" data-wf--header-section--variant="bg-image" data-collapse="medium" role="banner" data-duration="400">
+      <div class="container-default w-container">
+        <div class="header-block">
+          <a href="index.html" class="header-brand w-inline-block">
+            <div class="header-brand-text">Collective</div>
+          </a>
+          <nav role="navigation" class="header-menu w-nav-menu">
+            <div class="header-menu-block">
+              <a href="index.html" class="header-nav-link w-nav-link">Home</a>
+              <a href="yacht.html" class="header-nav-link w-nav-link">Yachts</a>
+              <a href="about.html" class="header-nav-link w-nav-link">About</a>
+              <div class="header-btn-link">
+                <a data-wf--secondary-button--variant="white" href="#" class="secondary-button w-variant-06ee5e21-824a-5ae8-8694-e1864f49b3e4 w-inline-block" data-modal>
+                  <div class="secondary-text">Book Now</div><img src="images/White.svg" loading="eager" alt="" class="secondary-icon">
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="header-button w-nav-button">
+            <div class="header-menu-button-block">
+              <div class="top"></div>
+              <div class="middle"></div>
+              <div class="bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <section class="yacht-details-section">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-default w-container">
+            <div class="yacht-details-slug">
+              <a href="index.html" class="yacht-details-link">Home</a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 20" fill="none" class="yacht-details-arrow"><path d="M7.11199 4.14182C6.93882 4.13801 6.76876 4.18821 6.62547 4.28552C6.48217 4.38282 6.37275 4.52242 6.31242 4.68479C6.2521 4.84716 6.24386 5.02426 6.28885 5.19153C6.33385 5.35879 6.42984 5.50782 6.56348 5.618L11.6628 9.98649L6.56348 14.3534C6.47103 14.4214 6.39361 14.5076 6.33606 14.6069C6.27851 14.7062 6.24208 14.8162 6.22903 14.9302C6.21599 15.0442 6.22663 15.1597 6.26027 15.2693C6.29392 15.379 6.34985 15.4806 6.42456 15.5677C6.49927 15.6548 6.59116 15.7254 6.69447 15.7753C6.79777 15.8252 6.91027 15.8533 7.02492 15.8577C7.13956 15.8621 7.25389 15.8429 7.36073 15.8011C7.46758 15.7593 7.56464 15.6958 7.64584 15.6148L13.4841 10.6196C13.5757 10.5414 13.6494 10.4443 13.6998 10.3348C13.7503 10.2254 13.7765 10.1062 13.7765 9.98572C13.7765 9.86519 13.7503 9.74606 13.6998 9.63662C13.6494 9.52717 13.5757 9.42996 13.4841 9.35172L7.64584 4.35174C7.49836 4.22074 7.30919 4.14646 7.11199 4.14182Z" fill="currentColor"></path></svg>
+              <a href="yacht.html" class="yacht-details-link">Yachts</a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 20" fill="none" class="yacht-details-arrow"><path d="M7.11199 4.14182C6.93882 4.13801 6.76876 4.18821 6.62547 4.28552C6.48217 4.38282 6.37275 4.52242 6.31242 4.68479C6.2521 4.84716 6.24386 5.02426 6.28885 5.19153C6.33385 5.35879 6.42984 5.50782 6.56348 5.618L11.6628 9.98649L6.56348 14.3534C6.47103 14.4214 6.39361 14.5076 6.33606 14.6069C6.27851 14.7062 6.24208 14.8162 6.22903 14.9302C6.21599 15.0442 6.22663 15.1597 6.26027 15.2693C6.29392 15.379 6.34985 15.4806 6.42456 15.5677C6.49927 15.6548 6.59116 15.7254 6.69447 15.7753C6.79777 15.8252 6.91027 15.8533 7.02492 15.8577C7.13956 15.8621 7.25389 15.8429 7.36073 15.8011C7.46758 15.7593 7.56464 15.6958 7.64584 15.6148L13.4841 10.6196C13.5757 10.5414 13.6494 10.4443 13.6998 10.3348C13.7503 10.2254 13.7765 10.1062 13.7765 9.98572C13.7765 9.86519 13.7503 9.74606 13.6998 9.63662C13.6494 9.52717 13.5757 9.42996 13.4841 9.35172L7.64584 4.35174C7.49836 4.22074 7.30919 4.14646 7.11199 4.14182Z" fill="currentColor"></path></svg>
+              <div class="yacht-details-link text">90&#x27; Acgua Alberti</div>
+            </div>
+            <div class="yacht-details-block">
+              <div class="yacht-details-text-block">
+                <h1 class="yacht-details-name">90&#x27; Acgua Alberti</h1>
+                <div class="yacht-details-summery">Experience luxury aboard the 90&#x27; Acgua Alberti — a stunning 90-foot superyacht perfect for unforgettable Miami charters.</div>
+                <div class="yacht-details-info-wrap">
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Available In:</div>
+                    <div class="yacht-details-info-text">Miami, FL</div>
+                  </div>
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Guests:</div>
+                    <div class="yacht-details-info-text">Max 30</div>
+                  </div>
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Length:</div>
+                    <div class="yacht-details-info-text">90'</div>
+                  </div>
+                </div>
+                <div class="yacht-details-info-wrap">
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Yacht Type:</div>
+                    <div class="yacht-details-info-text">Motor Yacht</div>
+                  </div>
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Starting At:</div>
+                    <div class="yacht-details-info-text">$2,500</div>
+                  </div>
+                  <div class="yacht-details-info">
+                    <div class="yacht-details-info-title">Captains:</div>
+                    <div class="yacht-details-info-text">01</div>
+                  </div>
+                </div>
+                <div class="yacht-details-info-wrap border-none">
+                  <div class="yacht-details-info border-none">
+                    <div class="yacht-details-info-title">Crew:</div>
+                    <div class="yacht-details-info-text">02</div>
+                  </div>
+                </div>
+                <div class="yacht-details-form-wrap">
+                  <a href="#" class="yacht-details-button w-button" data-modal>Book Now</a>
+                </div>
+              </div>
+              <div class="yacht-details-card-block">
+                <div class="yacht-details-card"><img src="Boat Photos/acgua-alberti.avif" loading="eager" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-details-image">
+                </div>
+                <div class="yacht-details-card _2nd"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-2.jpg" loading="eager" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-details-image"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-4.jpg" loading="eager" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-details-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="down" class="yacht-gallery-section">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-default w-container">
+            <div class="yacht-gallery-block">
+              <h3 class="yacht-gallery-description">&ldquo;The 90&#x27; Acgua Alberti delivers an unmatched luxury experience on the waters of Miami.&rdquo;</h3>
+              <div class="yacht-gallery-image-block">
+                <h1 id="w-node-_72d54fb9-02dc-867a-7760-7122002c52b2-58b604bd" class="yacht-gallery-title">Gallery</h1><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-1.jpg" loading="lazy" id="w-node-f3ea5c76-5d3c-f133-9b90-c051b6c5789f-58b604bd" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-01"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-2.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-02"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-4.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-03"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-6.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-04"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-8.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-05"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-10.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-06"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-12.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-14.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-16.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-17.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-18.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-20.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-22.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-24.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-25.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-26.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-27.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-28.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-29.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07"><img src="Boat Photos for website/90' Deep Blue W: Jacuzzi/DeepBlue-30.jpg" loading="lazy" alt="90-foot Acgua Alberti superyacht charter Miami for large groups and events" class="yacht-gallery-image-07">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trips-section">
+        <div class="section-gap bottom-gap">
+          <div class="trips-block">
+            <div class="trips-text-block">
+              <h5 class="trips-subtitle">We don&#x27;t offer trips</h5>
+              <h2 class="trips-title">We deliver experiences</h2>
+            </div>
+            <div data-poster-url="videos/We-deliver-experiences-poster-00001.jpg" data-video-urls="videos/We-deliver-experiences-transcode.mp4,videos/We-deliver-experiences-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="trips-bg-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&#x27;videos/We-deliver-experiences-poster-00001.jpg&#x27;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                <source src="videos/We-deliver-experiences-transcode.mp4" data-wf-ignore="true">
+                <source src="videos/We-deliver-experiences-transcode.webm" data-wf-ignore="true">
+              </video></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="footer-section">
+      <div class="footer-block">
+        <div class="footer-navigation-block">
+          <div class="w-layout-blockcontainer container-default w-container">
+            <div class="footer-navigation-wrap">
+              <div class="footer-desp-block">
+                <h2 class="footer-desp">Let&#x27;s plan your private voyage now</h2>
+                <a data-wf--secondary-button--variant="white" href="#" data-modal class="secondary-button w-variant-06ee5e21-824a-5ae8-8694-e1864f49b3e4 w-inline-block">
+                  <div class="secondary-text">Request Itinerary</div><img src="images/White.svg" loading="eager" alt="" class="secondary-icon">
+                </a>
+              </div>
+              <div class="footer-nav-block">
+                <div class="footer-nav-wrap">
+                  <h5 class="footer-nav-title">Main Pages</h5>
+                  <div class="footer-nav-menu">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About</a>
+                    <a href="services.html" class="footer-nav-link">Services</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="gallery.html" class="footer-nav-link">Gallery</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-watermark-block">
+          <div class="footer-watermark">Collective</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69ae24c3024e541e58b603ce" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
 
-    function closeModal() {
-      backdrop.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-booking">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-heading">How Would You Like to Book?</div>
+    <p class="modal-subtext">We&#x27;ll confirm your booking right away!</p>
+    <div class="modal-buttons">
+      <a href="tel:7876645040" class="modal-btn modal-btn-call">Call us at (787) 664-5040</a>
+      <a href="https://wa.me/17876645040" target="_blank" rel="noopener" class="modal-btn modal-btn-wa">WhatsApp Direct</a>
+    </div>
+  </div>
+</div>
 
-    document.querySelectorAll('[data-modal]').forEach(btn => {
-      btn.addEventListener('click', openModal);
-    });
+<script>
+(function() {
+  var backdrop = document.getElementById('modalBackdrop');
+  var modalClose = document.getElementById('modalClose');
+  if (!backdrop || !modalClose) return;
 
-    modalCloseBtn.addEventListener('click', closeModal);
+  function openModal(e) {
+    e.preventDefault();
+    backdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
 
-    backdrop.addEventListener('click', (e) => {
-      if (e.target === backdrop) closeModal();
-    });
+  function closeModal() {
+    backdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeModal();
-    });
-  </script>
+  document.querySelectorAll('[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', openModal);
+  });
 
+  modalClose.addEventListener('click', closeModal);
+
+  backdrop.addEventListener('click', function(e) {
+    if (e.target === backdrop) closeModal();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+})();
+</script>
+<script src="js/tracking.js"></script>
 </body>
 </html>
