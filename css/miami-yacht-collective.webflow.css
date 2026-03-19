@@ -2076,6 +2076,10 @@ ul {
   overflow: hidden;
 }
 
+.home-background-video .w-backgroundvideo-backgroundvideoplaypausebutton {
+  display: none;
+}
+
 .home-hero-block {
   z-index: 1;
   flex-flow: row;
