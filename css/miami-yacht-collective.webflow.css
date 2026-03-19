@@ -2076,8 +2076,8 @@ ul {
   overflow: hidden;
 }
 
-.home-background-video .w-backgroundvideo-backgroundvideoplaypausebutton {
-  display: none;
+.w-background-video--control {
+  display: none !important;
 }
 
 .home-hero-block {
@@ -2278,7 +2278,7 @@ ul {
   grid-template-columns: .58fr .42fr;
   grid-auto-columns: 1fr;
   place-items: end start;
-  display: flex;
+  display: none;
 }
 
 .home-about-text-block {
