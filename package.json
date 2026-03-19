@@ -1,0 +1,23 @@
+{
+  "name": "yacht-rental-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bambino2025/yactch-rental-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bambino2025/yactch-rental-website/issues"
+  },
+  "homepage": "https://github.com/Bambino2025/yactch-rental-website#readme",
+  "description": "",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
