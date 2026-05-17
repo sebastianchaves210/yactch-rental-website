@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Block Webflow template artifacts that should not be indexed
+Disallow: /yacht.html
+Disallow: /search.html
+Disallow: /detail_blog.html
+Disallow: /detail_category.html
+Disallow: /detail_guest.html
+Disallow: /detail_length.html
+Disallow: /detail_locations.html
+Disallow: /detail_price.html
+Disallow: /detail_services.html
+Disallow: /detail_type.html
+Disallow: /detail_yacht.html
+Disallow: /utility/
+Disallow: /401.html
+Disallow: /logo-preview.html
+
+# AI crawlers (allow for citation/discoverability)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://miamiyachtcollective.com/sitemap.xml
